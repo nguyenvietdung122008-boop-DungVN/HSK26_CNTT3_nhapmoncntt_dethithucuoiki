@@ -220,7 +220,23 @@ PS C:\dung\MiniPrjoect\starter-kit\quan-ly-model-ai>)
 ### Nội dung file logs/tong_hop.txt
 
 ```text
-(Dán nội dung file vào đây – xoá dòng này)
+(=== BAO CAO VAN HANH MODEL AI ===
+
+2026-11-10 08:09:18 WARNING POST /v1/embeddings model=LLAMA-2-OLD
+2026-11-10 08:16:05 WARNING GET /v1/fine-tune/jobs-legacy
+2026-11-10 08:38:29 WARNING GET /images/model-card-v1.png
+2026-11-10 09:01:44 WARNING POST /v1/completions model=DAVINCI-002
+2026-11-10 09:14:02 WARNING GET /v1/quota/expired-key
+
+
+
+
+Count    : 6
+Average  :
+Sum      :
+Maximum  :
+Minimum  :
+Property :)
 
 ```
 
@@ -228,9 +244,10 @@ PS C:\dung\MiniPrjoect\starter-kit\quan-ly-model-ai>)
 
 > README.md, .gitignore và .env.example được chấm trực tiếp trên file ở gốc dự án. Đánh dấu `[x]` vào các mục đã làm để tự kiểm tra.
 
-- [ ] README.md: Heading 1, hình ảnh (`![Alt](path)`), mô tả có **in đậm**, _in nghiêng_ và `inline code`, bảng, code block, task list, blockquote
-- [ ] .gitignore có dòng `.env` (tên file đúng, không có đuôi .txt)
-- [ ] .env.example có đủ tên biến, giá trị để trống (tên file đúng, không có đuôi .txt)
+- [x] README.md: Heading 1, hình ảnh (`![Alt](path)`), mô tả có **in đậm**, _in nghiêng_ và `inline code`, bảng, code block, task list, blockquote
+- [x] .gitignore có dòng `.env` (tên file đúng, không có đuôi .txt)
+- [x] .env.example có đủ tên biến, giá trị để trống (tên file đúng, không có đuôi .txt)
+
 
 ## 4.6. Kiểm tra trang web bằng DevTools (F12) và báo cáo lỗi
 
@@ -238,25 +255,24 @@ PS C:\dung\MiniPrjoect\starter-kit\quan-ly-model-ai>)
 
 | STT | Tab DevTools phát hiện lỗi | Tên file hoặc thông báo lỗi | Cách khắc phục |
 | --- | -------------------------- | --------------------------- | -------------- |
-| 1   |                            |                             |                |
-| 2   |                            |                             |                |
+| 1   | Network | file:///D:/MiniPrjoect/starter-kit/quan-ly-model-ai/web/images/logo.png | Sửa lại đường dẫn file/tên file |
+| 2   | Console | GET file:///D:/MiniPrjoect/starter-kit/quan-ly-model-ai/web/images/logo.png net::ERR_FILE_NOT_FOUND | Sửa lại đường dẫn file/tên file|
 
 > Ảnh chụp màn hình lưu trong thư mục `evidence/` (network.png, console.png).
 
 ### Báo cáo lỗi gửi trưởng nhóm
 
-- **Context:**
-- **Expected:**
-- **Actual:**
-- **Log:**
+- **Context:** Tên file trong index.html bị nhập sai/sai đường dẫn
+- **Expected:** Lỗi được sửa, web chạy mượt mà không báo lỗi
+- **Actual:** Lỗi chưa được sửa, web vẫn báo lỗi
+- **Log:** GET file:///D:/MiniPrjoect/starter-kit/quan-ly-model-ai/web/images/logo.png net::ERR_FILE_NOT_FOUND
 
 ### Câu tìm kiếm Google
 
 ```text
-(Ghi câu tìm kiếm vào đây – xoá dòng này)
+site:stackoverflow.com "ERR_FILE_NOT_FOUND"
 
 ```
-
 ## 4.7. Excel
 
 > Phần Excel được chấm trực tiếp trên file `data/chi_phi_model_thang_11.xlsx`, không cần ghi vào đây.
